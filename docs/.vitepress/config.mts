@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     base:'/',
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "Bzls Blog",
+  description: "physics and AI learning notes and blog",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
