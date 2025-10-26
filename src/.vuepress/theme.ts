@@ -10,7 +10,7 @@ export default hopeTheme({
         name: "半枕凉书",
         url: "https://bzlsqaq.github.io",
     },
-
+    print: false,
     logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
     repo: "vuepress-theme-hope/vuepress-theme-hope",
@@ -38,6 +38,7 @@ export default hopeTheme({
 
     blog: {
         description: "2395913652@qq.com",
+
         intro: "/intro.html",
     },
 
@@ -61,6 +62,7 @@ export default hopeTheme({
         imgSize: true,
         include: true,
         mark: true,
+        preview:true,
         plantuml: true,
         spoiler: true,
         stylize: [
@@ -84,10 +86,10 @@ export default hopeTheme({
 
         // uncomment these if you need TeX support
         math: {
-          // install katex before enabling it
-          // type: "katex",
-          // or install mathjax-full before enabling it
-          type: "mathjax",
+            // install katex before enabling it
+            // type: "katex",
+            // or install mathjax-full before enabling it
+            type: "mathjax",
         },
 
         // install chart.js before enabling it
@@ -119,8 +121,9 @@ export default hopeTheme({
     },
 
     plugins: {
-        blog: true,
-
+        blog: {
+            excerptLength: 50,
+        },
         // Install @waline/client before enabling it
         // Note: This is for testing ONLY!
         // You MUST generate and use your own comment service in production.
