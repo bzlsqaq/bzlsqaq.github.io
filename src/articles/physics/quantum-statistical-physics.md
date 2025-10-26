@@ -1,6 +1,7 @@
 ---
 title: 量子统计物理
 category: 物理
+excerpt: true
 tag: 量子
 ---
 

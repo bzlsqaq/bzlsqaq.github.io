@@ -1,6 +1,6 @@
 ---
 icon: circle-info
-
+article: false
 ---
 
 # Intro Page

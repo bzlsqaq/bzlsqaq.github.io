@@ -37,7 +37,7 @@ export default hopeTheme({
     },
 
     blog: {
-        description: "A FrontEnd programmer",
+        description: "2395913652@qq.com",
         intro: "/intro.html",
     },
 
