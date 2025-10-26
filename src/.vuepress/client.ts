@@ -8,25 +8,29 @@ declare global {
 
 export default defineClientConfig({
   enhance({ router }) {
-    if (typeof window !== "undefined") {
+    if (typeof window === "undefined") return;
+
+    // 加载 MathJax CDN
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+    script.async = true;
+
+    script.onload = () => {
       window.MathJax = {
         tex: { inlineMath: [["$", "$"]], displayMath: [["$$", "$$"]] },
         svg: { fontCache: "global" },
       };
 
-      import("mathjax-full/es5/tex-mml-chtml.js").then(() => {
-        // 延迟 50ms 再渲染公式，确保 VPCard DOM 已挂载
-        setTimeout(() => {
-          window.MathJax.typesetPromise?.();
-        }, 50);
+      // 首次渲染
+      setTimeout(() => window.MathJax?.typesetPromise?.(), 100);
 
-        // 路由切换渲染公式
-        router?.afterEach(() => {
-          setTimeout(() => {
-            window.MathJax.typesetPromise?.();
-          }, 50);
-        });
+      // 页面切换时渲染
+      router?.afterEach(() => {
+        setTimeout(() => window.MathJax?.typesetPromise?.(), 100);
       });
-    }
+    };
+
+    document.head.appendChild(script);
   },
 });
