@@ -139,7 +139,7 @@ export default hopeTheme({
 
         // install @vuepress/plugin-pwa and uncomment these if you want a PWA
         // pwa: {
-        //   favicon: "/favicon.ico",
+        //   favicon: "",
         //   cacheHTML: true,
         //   cacheImage: true,
         //   appendBase: true,

@@ -2,17 +2,21 @@ import {sidebar} from "vuepress-theme-hope";
 
 export default sidebar({
 
-    "/articles/": [
-        "",
+    "/articles/physics/": [{
+        text: "物理",
+        icon: "book",
 
-        {
-            text: "Articles",
-            icon: "book",
-            prefix: '',
-            link: "/articles/",
-            children: 'structure'
-        },
-    ],
+        prefix: "",
+        link: "",
+        children: "structure"
+    }], "/articles/program/": [{
+        text: "程序及算法",
+        icon: "book",
+
+        prefix: "",
+        link: "",
+        children: "structure"
+    }],
 
 
 });
