@@ -1,6 +1,6 @@
 ---
 title: 算法
 sidebar: false
-index: false
+article: false
 ---
 <div ><catalog base="/articles/algorithm/"/></div>

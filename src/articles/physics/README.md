@@ -1,6 +1,7 @@
 ---
 title: 物理
 sidebar: false
-index: false
+
+article: false
 ---
 <catalog base="/articles/physics/"/>

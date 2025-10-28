@@ -1,6 +1,6 @@
 ---
 title: 程序
 sidebar: false
-index: false
+article: false
 ---
 <div ><catalog base="/articles/program/"/></div>
