@@ -45,6 +45,7 @@ def multip_diff(func_f: Expr, func_g: Expr, elem_list: list[tuple[Symbol, Symbol
 ::: preview 输入
 display(multip_diff(f, g, [(t, t0, 1), (x, x0, 1)]))
 :::
+a
 ::: preview 输出
 $\displaystyle f{\left(x,t \right)} \frac{\partial^{2}}{\partial x\partial t} g{\left(x,t \right)} + g{\left(x,t \right)} \frac{\partial^{2}}{\partial x\partial t} f{\left(x,t \right)} - \frac{\partial}{\partial t} f{\left(x,t \right)} \frac{\partial}{\partial x} g{\left(x,t \right)} - \frac{\partial}{\partial x} f{\left(x,t \right)} \frac{\partial}{\partial t} g{\left(x,t \right)}$
 :::
