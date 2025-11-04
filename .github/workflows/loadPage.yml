@@ -51,7 +51,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           
-          path: docs/src/.vuepress/dist
+          path: src/.vuepress/dist
 
   # 部署工作
   deploy:
