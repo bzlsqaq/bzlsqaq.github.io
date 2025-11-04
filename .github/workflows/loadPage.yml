@@ -45,12 +45,12 @@ jobs:
         run: pnpm install --frozen-lockfile # 若使用 pnpm/yarn，改为 pnpm install / yarn install
 
       - name: 构建 VuePress 站点
-        run: pnpm docs:clean-dev # 确保 package.json 中该命令对应 VuePress 的构建（通常是 "vuepress build docs"）
+        run: pnpm docs:build # 确保 package.json 中该命令对应 VuePress 的构建（通常是 "vuepress build docs"）
 
       - name: 上传构建产物
         uses: actions/upload-pages-artifact@v3
         with:
-          # VuePress 默认输出目录为 docs/.vuepress/dist（与 VitePress 类似，按需调整）
+          
           path: docs/src/.vuepress/dist
 
   # 部署工作
