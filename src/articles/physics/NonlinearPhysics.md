@@ -8,7 +8,10 @@ tags:
 ---
 
 <!-- more -->
-
+双线性算子定义为：
+$$D^m_tD^n_xf(t,x)\cdot g(t,x)=\frac{\partial^m}{\partial t_0^m}\frac{\partial^n}{\partial x_0^n}f(t+t_0,x+x_0)\cdot g(t-t_0,x-x_0)|_{s_0=0,t_0=0}
+$$
+这里$m,n$为正整数。
 ```python :line-number
 def multip_diff(func_f: Expr, func_g: Expr, elem_list: list[tuple[Symbol, Symbol, int]]):
     """
@@ -45,7 +48,7 @@ def multip_diff(func_f: Expr, func_g: Expr, elem_list: list[tuple[Symbol, Symbol
 ::: preview 输入
 display(multip_diff(f, g, [(t, t0, 1), (x, x0, 1)]))
 :::
-a
+
 ::: preview 输出
 $\displaystyle f{\left(x,t \right)} \frac{\partial^{2}}{\partial x\partial t} g{\left(x,t \right)} + g{\left(x,t \right)} \frac{\partial^{2}}{\partial x\partial t} f{\left(x,t \right)} - \frac{\partial}{\partial t} f{\left(x,t \right)} \frac{\partial}{\partial x} g{\left(x,t \right)} - \frac{\partial}{\partial x} f{\left(x,t \right)} \frac{\partial}{\partial t} g{\left(x,t \right)}$
 :::
