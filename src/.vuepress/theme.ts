@@ -1,4 +1,4 @@
-import {hopeTheme} from "vuepress-theme-hope";
+import { hopeTheme } from "vuepress-theme-hope";
 
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
@@ -62,17 +62,17 @@ export default hopeTheme({
         imgSize: true,
         include: true,
         mark: true,
-        preview:true,
+        preview: true,
         plantuml: true,
         spoiler: true,
         stylize: [
             {
                 matcher: "Recommended",
-                replacer: ({tag}) => {
+                replacer: ({ tag }) => {
                     if (tag === "em")
                         return {
                             tag: "Badge",
-                            attrs: {type: "tip"},
+                            attrs: { type: "tip" },
                             content: "Recommended",
                         };
                 },
@@ -90,6 +90,11 @@ export default hopeTheme({
             // type: "katex",
             // or install mathjax-full before enabling it
             type: "mathjax",
+            tex: {
+                tags: "all", 
+                // 启用 AMS 编号风格
+                
+            },
         },
 
         // install chart.js before enabling it
@@ -131,7 +136,7 @@ export default hopeTheme({
         //   provider: "Waline",
         //   serverURL: "https://waline-comment.vuejs.press",
         // },
- 
+
         components: {
             components: ["Badge", "VPCard",],
         },
