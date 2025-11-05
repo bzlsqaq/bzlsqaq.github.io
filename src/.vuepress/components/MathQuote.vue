@@ -7,12 +7,20 @@
 <script setup>
 import { defineProps } from 'vue'
 
+
 const props = defineProps({
   targetId: { type: String, required: true },
-  offset: { type: Number, default:  window.innerHeight / 3 } // 导航栏高度
+  offset: {
+    type: Number, default: () => {
+      return typeof window !== 'undefined' ? window.innerHeight / 3 : 150;
+    }
+  } // 导航栏高度
 })
 
+
+
 function scrollToTarget() {
+  
   const target = document.getElementById(props.targetId)
   if (!target) return
 
@@ -25,9 +33,10 @@ function scrollToTarget() {
   void target.offsetWidth // 触发重绘
   target.classList.add('highlight')
 }
+
 </script>
 
-<style scoped>
+<style>
 .math-link {
   color: var(--vp-c-brand);
   cursor: pointer;
@@ -35,9 +44,17 @@ function scrollToTarget() {
 }
 
 @keyframes highlight-flash {
-  0% { background-color: rgba(255, 255, 0, 0.5); }
-  50% { background-color: transparent; }
-  100% { background-color: rgba(255, 255, 0, 0.5); }
+  0% {
+    background-color: rgba(255, 255, 0, 0.5);
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: rgba(255, 255, 0, 0.5);
+  }
 }
 
 .highlight {

@@ -63,19 +63,19 @@ $$
 
 
 $$
-Q*N(V,T)=\int^{3N}{re^{-\beta\sum*{i<j}v\_{ij}}}
+Q_N(V,T)=\int^{3N}{re^{-\beta\sum_{i<j}v_{ij}}}
 $$
 其中 $\lambda=\sqrt{\frac{2\pi\hbar^2}{mk_BT}}$，这是平均热波长，对于每一个$v_{ij}$可以写为(梅耶函数)：
 $$
-e^{-\beta v*{ij}}=1+f*{ij}
+e^{-\beta v_{ij}}=1+f_{ij}
 $$
 则表示为,
 $$
-Q*N(V,T)=\int{d^{3N}\prod*{i<j}(1+f\_{ij})}
+Q_N(V,T)=\int{d^{3N}\prod_{i<j}(1+f_{ij})}
 $$
 其中 N 粒子连乘有$\sum_{N}(N-1)$，即$\frac{1}{2}N(N-1)$项，将连乘的每一项展开：
 $$
-Q*N(V,T)=\int{d^{3N}[1+(f*{12}+f*{13}+\cdots)+(f*{12}f*{13}+f*{12}f\_{14}+\cdots)+\cdots]}$$
+Q_N(V,T)=\int{d^{3N}[1+(f_{12}+f_{13}+\cdots)+(f_{12}f_{13}+f_{12}f_{14}+\cdots)+\cdots]}$$
 定义$l-$集团是$l$个粒子的相连图，对于任意一个$N$粒子图，都可以用若干个$l-$集团乘积表示，其中有$m_l 个$是$l-$集团，一组合规的$\{m_l\}$满足：
 $$
 \sum_{l=1}^{N}{lm_l}=N,m_l=0,1,2,\cdots,N
