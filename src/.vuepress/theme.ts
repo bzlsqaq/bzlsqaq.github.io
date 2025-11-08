@@ -29,17 +29,19 @@ export default hopeTheme({
 
     encrypt: {
         config: {
-            "/demo/encrypt.html": {
+            "/articles/test.html": {
                 hint: "Password: 1234",
                 password: "1234",
             },
         },
     },
-
+ 
     blog: {
         description: "2395913652@qq.com",
-
+        name:"半枕凉书",
+        articlePerPage: 10,
         intro: "/intro.html",
+        articleInfo:["Author", "Date", "Category", "Tag"],
     },
 
     metaLocales: {
@@ -127,7 +129,7 @@ export default hopeTheme({
 
     plugins: {
         blog: {
-            excerptLength: 50,
+            excerpt: false,
         },
         // Install @waline/client before enabling it
         // Note: This is for testing ONLY!
@@ -140,11 +142,11 @@ export default hopeTheme({
         components: {
             components: ["Badge", "VPCard",],
         },
-
+        
         icon: {
             prefix: "fa6-solid:",
         },
-
+        
         // install @vuepress/plugin-pwa and uncomment these if you want a PWA
         // pwa: {
         //   favicon: "",

@@ -1,7 +1,8 @@
 ---
-title: 程序
+title: 群论
 sidebar: false
 index: false
 article: false
+tag: 目录
 ---
-<catalog level='1'/>
+<catalog />

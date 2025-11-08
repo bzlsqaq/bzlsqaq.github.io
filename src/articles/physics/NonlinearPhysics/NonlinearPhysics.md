@@ -1,6 +1,8 @@
 ---
-title: 非线性物理
-category: 物理
+title: 双线性算子
+category: 
+  - 物理
+  - 非线性
 
 tags:
   - 数学
@@ -46,7 +48,9 @@ def multip_diff(func_f: Expr, func_g: Expr, elem_list: list[tuple[Symbol, Symbol
     return func
 ```
 ::: preview 输入
+```python 
 display(multip_diff(f, g, [(t, t0, 1), (x, x0, 1)]))
+```
 :::
 
 ::: preview 输出
