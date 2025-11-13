@@ -38,11 +38,10 @@ function scrollToTarget() {
 
 <style>
 .math-link {
-  color: var(--vp-c-brand);
+  color: rgba(10, 44, 215, 0.44);
   cursor: pointer;
   text-decoration: underline;
 }
-
 @keyframes highlight-flash {
   0% {
     background-color: rgba(255, 255, 0, 0.5);
