@@ -11,9 +11,9 @@ export default hopeTheme({
         url: "https://bzlsqaq.github.io",
     },
     print: false,
-    logo: "/.vuepress/public/assets/logo.jpg",
+    logo: "/assets/logo.jpg",
 
-    repo: "vuepress-theme-hope/vuepress-theme-hope",
+    repo: "bzlsqaq/bzlsqaq.github.io",
 
     docsDir: "src",
 

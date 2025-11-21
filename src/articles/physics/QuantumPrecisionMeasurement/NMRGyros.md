@@ -14,5 +14,33 @@ tags:
 #### 核磁共振场和旋转的振动
 核自旋与环境之间的主要基本相互作用是磁场。在一个静止的惯性参考系中，约化核自旋角动量$\boldsymbol{K}$在磁场$\boldsymbol{B}$中的哈密顿量$H=-\hbar\gamma\boldsymbol{B}\cdot\boldsymbol{K}$，其中$\gamma$对于Xe-131是正的，对于其他同位素是负的。由Ehrenfest定理导出Bloch方程
 $$
-\frac{d\langle\boldsymbol{K}\rangle}{dt}=\frac{-i}{\hbar}\langle[\boldsymbol{K},H]\rangle=i\gamma\langle[\boldsymbol{K},\boldsymbol{K}\cdot\boldsymbol{B}]\rangle
+\begin{equation}
+\frac{d\langle\boldsymbol{K}\rangle}{dt}=\frac{-i}{\hbar}\langle[\boldsymbol{K},H]\rangle=i\gamma\langle[\boldsymbol{K},\boldsymbol{K}\cdot\boldsymbol{B}]\rangle=\gamma\boldsymbol{B}\times\langle\boldsymbol{K}\rangle
+\end{equation}
 $$
+
+::: details 注解
+$$
+\begin{equation*}
+\begin{split}
+\langle[\boldsymbol{K},\boldsymbol{K}\cdot\boldsymbol{B}]\rangle&=\langle[\boldsymbol{K},K_x]B_x+[\boldsymbol{K},K_y]B_y+[\boldsymbol{K},K_z]B_z\rangle\\
+&=\langle i(k_z\vec{e_y}-k_y\vec{e_z})B_x+i(k_x\vec{e_z}-k_z\vec{e_x})B_y+i(k_y\vec{e_x}-k_x\vec{e_y})B_z\rangle\\
+&=-i\boldsymbol{B}\times\langle\boldsymbol{K}\rangle
+\end{split}
+\end{equation*}
+$$
+:::
+
+::: tip 
+以下内容省略期望值符号
+:::
+约定均匀磁场$\boldsymbol{B}=B_z\vec{e_z}$,这样可以分为平行和垂直磁场的分量$\boldsymbol{K}=K_z\vec{e_z}+\boldsymbol{K}_\perp$。
+定义$K_+=K_x+iK_y=K_\perp e^{-i\phi}$,布洛赫方程变为
+$$\frac{dK_+}{dt}=-i\gamma B_zK_+$$
+::: details 注解
+$K_x=K_\perp cos\phi,k_y=K_\perp sin\phi,K_\perp=\sqrt{K_x^2+k_y^2}$
+$B_z$场下，$B\times K=B_zK_x\vec{e_y}-B_zk_y\vec{e_x}$
+:::
+方程解为
+$$K_+(t)=K_\perp e^{-i\gamma\int B_zdt}$$
+其中相位$\phi=\gamma\int B_zdt$
