@@ -64,6 +64,7 @@ export default hopeTheme({
         imgSize: true,
         include: true,
         mark: true,
+        mermaid:true,
         preview: true,
         plantuml: true,
         spoiler: true,
