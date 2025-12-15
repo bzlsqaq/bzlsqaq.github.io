@@ -68,10 +68,10 @@ categories:
     <tr>
       <td></td>
       <td>窗帘布料</td>
-      <td>双开 (例如 330元)</td>
-      <td>330</td>
-      <td>1</td>
-      <td>330</td>
+      <td>双开 </td>
+      <td>206</td>
+      <td>2</td>
+      <td>412</td>
     </tr>
     <tr>
       <td><b>温控</b></td>
@@ -114,20 +114,12 @@ categories:
       <td>69</td>
     </tr>
     <tr>
-      <td><b>服务费</b></td>
-      <td>智能开关安装费</td>
-      <td>两个开关的安装服务费</td>
-      <td>50</td>
-      <td>1</td>
-      <td>50</td>
-    </tr>
-    <tr>
       <td><b>总计</b></td>
       <td></td>
       <td><b>硬件与基础服务总投入</b></td>
       <td></td>
       <td></td>
-      <td><b>2,247.6 元</b></td>
+      <td><b>2,279.6 元</b></td>
     </tr>
   </tbody>
 </table>
@@ -144,13 +136,21 @@ https://item.jd.com/100117947280.html
 
 <hr>
 
+::: note 弃用
 窗帘 330 双开
 https://item.jd.com/100101836713.html#switch-sku
 宽度:6m 正常宽度 300*250/270 2片
 挂钩6.5cm
-<hr>
+:::
 
-<div class="image-grid">
+阻燃窗帘 2*206
+https://item.jd.com/10147775844449.html#switch-sku
+<hr>
+<div class="image-grid" style="grid-template-columns: repeat(2, 1fr);">
+<div><img src="./img_8.png" alt="窗帘介绍"></div>
+<div><img src="./img_9.png" alt="窗帘介绍"></div>
+</div>
+<div class="ima./ge-grid">
 <div><img src="./img_2.png" alt="窗帘电机"></div>
 <div><img src="./img.png" alt="窗帘"></div>
 <div><img src="./img_4.png" alt="红外遥控"></div>

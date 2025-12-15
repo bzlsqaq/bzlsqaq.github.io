@@ -1,7 +1,7 @@
 ---
 home: true
 layout: Blog
-icon: house
+icon: 'home'
 title: 首页
 bgImageStyle: 'background-image: linear-gradient(135deg, #c4c4c4 0%,#aaaaaa 50%, #494949 100%)'
 heroText: Bzls Bits

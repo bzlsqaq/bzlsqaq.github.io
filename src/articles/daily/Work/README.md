@@ -5,4 +5,4 @@ index: false
 article: false
 tag: 目录
 ---
-<catalog />
+<catalog level="1"/>

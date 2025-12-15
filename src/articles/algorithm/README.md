@@ -2,6 +2,7 @@
 title: 算法
 sidebar: false
 article: false
+icon: "robot"
 ---
 
-<div ><catalog base="/articles/algorithm/" level='1'/></div>
+<catalog  level='1'/>

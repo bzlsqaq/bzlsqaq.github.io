@@ -1,4 +1,4 @@
-import { hopeTheme } from "vuepress-theme-hope";
+import {hopeTheme} from "vuepress-theme-hope";
 
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
@@ -35,13 +35,13 @@ export default hopeTheme({
             },
         },
     },
- 
+
     blog: {
         description: "2395913652@qq.com",
-        name:"半枕凉书",
+        name: "半枕凉书",
         articlePerPage: 10,
         intro: "/intro.html",
-        articleInfo:["Author", "Date", "Category", "Tag"],
+        articleInfo: ["Author", "Date", "Category", "Tag"],
     },
 
     metaLocales: {
@@ -64,18 +64,18 @@ export default hopeTheme({
         imgSize: true,
         include: true,
         mark: true,
-        mermaid:true,
+        mermaid: true,
         preview: true,
         plantuml: true,
         spoiler: true,
         stylize: [
             {
                 matcher: "Recommended",
-                replacer: ({ tag }) => {
+                replacer: ({tag}) => {
                     if (tag === "em")
                         return {
                             tag: "Badge",
-                            attrs: { type: "tip" },
+                            attrs: {type: "tip"},
                             content: "Recommended",
                         };
                 },
@@ -94,9 +94,9 @@ export default hopeTheme({
             // or install mathjax-full before enabling it
             type: "mathjax",
             tex: {
-                tags: "all", 
+                tags: "all",
                 // 启用 AMS 编号风格
-                
+
             },
         },
 
@@ -139,15 +139,21 @@ export default hopeTheme({
         //   provider: "Waline",
         //   serverURL: "https://waline-comment.vuejs.press",
         // },
-
+        catalog: {
+            // 关键设置：
+            // level: 1  -> 只显示一级子目录（或当前目录下的文件），不递归展开
+            // level: 2  -> 会显示子目录以及子目录下的内容（这就是你截图中现在的样子）
+            level: 1,
+        },
         components: {
             components: ["Badge", "VPCard",],
         },
-        
+
         icon: {
             prefix: "fa6-solid:",
+            assets: "fontawesome",
         },
-        
+
         // install @vuepress/plugin-pwa and uncomment these if you want a PWA
         // pwa: {
         //   favicon: "",
